@@ -988,7 +988,10 @@ section {
   }
 
   .hero-video {
-    object-position: center;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
   }
 
   .hero-scrim {
@@ -1098,21 +1101,27 @@ section {
     padding: 40px 28px;
   }
 
+  .map-wrap {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+
   .map-card {
     position: static;
     max-width: none;
     border-radius: 0;
-    border-top: none;
-    border-bottom: 5px solid var(--red);
-  }
-
-  .map-wrap {
-    display: flex;
-    flex-direction: column-reverse;
+    border-top: 5px solid var(--red);
+    border-bottom: none;
+    box-shadow: none;
   }
 
   .map-wrap iframe {
-    height: 340px;
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+    box-shadow: none;
   }
 
   .footer-grid {
