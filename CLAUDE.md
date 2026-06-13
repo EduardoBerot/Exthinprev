@@ -1,6 +1,6 @@
 # Exthinprev Landing Page
 
-Landing page para a **Exthinprev** — empresa de venda, recarga e manutenção de extintores localizada em Teutônia/RS.
+Landing page para a **Exthinprev** — empresa de venda e manutenção de extintores localizada em Teutônia/RS.
 
 ## Stack
 
@@ -29,7 +29,8 @@ src/
 
 public/
   logo.png              — logo principal
-  favicon.png           — favicon (E em chamas, fundo transparente)
+  favicon.png           — favicon 64x64 (E em chamas, fundo transparente)
+  og-image-v2.jpg       — OG image 1200x630 para compartilhamento social
   hero-extinguisher.mp4 — vídeo da intro do Hero
   hero-poster.jpg       — poster do vídeo (fallback)
 ```
@@ -41,7 +42,7 @@ public/
 - Todos os dados de contato e localização ficam em `src/constants.js` — edite apenas lá.
 - Vídeo do Hero: `object-position: 70% center` no desktop, `40% center` no mobile (compensa o `scaleX(-1)` do espelhamento).
 
-## Serviços atuais (Services.jsx)
+## Serviços (Services.jsx)
 
 1. Extintores certificados
 2. Recarga e manutenção
@@ -56,6 +57,19 @@ Todos migrados de SVG inline para `react-icons`:
 - Lucide (`lu`): serviços, UI, contato
 - IoLogoWhatsapp (`io5`): botão flutuante, navbar CTA, footer
 
+## SEO / OG
+
+- Title: `Exthinprev — Extintores e Prevenção | Teutônia/RS` (~51 chars)
+- Description: `Venda de extintores novos e manutenções em Teutônia/RS. Sinalização, treinamento TPCI e alvará do Corpo de Bombeiros.`
+- OG image URL absoluta: `https://exthinprev.vercel.app/og-image-v2.jpg`
+- Para forçar revalidação no WhatsApp após mudanças, compartilhar com `?v=N` na URL
+
+## Deploy
+
+- Hospedagem: Vercel
+- URL: https://exthinprev.vercel.app/
+- Repositório: https://github.com/EduardoBerot/Exthinprev.git (branch `main`)
+
 ## Comandos
 
 ```bash
@@ -68,4 +82,4 @@ npm run preview  # preview do build
 
 - Telefone: (51) 3762-2829
 - WhatsApp: (51) 99826-1680
-- Endereço: Rua Albino Suhre, 42 — Centro, Teutônia/RS
+- Endereço: Rua Albino Suhre, 42 — Teutônia/RS
