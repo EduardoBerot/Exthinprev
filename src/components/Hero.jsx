@@ -99,7 +99,7 @@ export default function Hero({ revealed, onReveal }) {
           </motion.h1>
 
           <motion.p className="hero-sub" variants={fadeUp}>
-            Venda, recarga e manutenção de extintores com certificação INMETRO.
+            Venda de extintores novos e manutenções com certificação INMETRO.
             A Exthinprev mantém sua empresa, condomínio ou veículo dentro das normas.
           </motion.p>
 
