@@ -1,32 +1,37 @@
 import { motion } from 'framer-motion'
-import { LuFlame, LuTriangleAlert, LuUsers, LuFileCheck, LuLamp, LuArrowRight } from 'react-icons/lu'
+import { LuFlame, LuWrench, LuTriangleAlert, LuUsers, LuFileCheck, LuLamp, LuArrowRight } from 'react-icons/lu'
 import Reveal from './Reveal.jsx'
 import { WHATSAPP_URL } from '../constants.js'
 
 const SERVICES = [
   {
-    title: 'Extintores novos e manutenções',
-    desc: 'Venda de extintores ABC, BC, CO₂ e água pressurizada certificados pelo INMETRO, com recarga, manutenção e teste hidrostático.',
+    title: 'Extintores certificados',
+    desc: 'Venda de extintores ABC, BC, CO₂ e água pressurizada novos, certificados pelo INMETRO, para empresas, condomínios e veículos.',
     icon: <LuFlame size={26} />,
   },
   {
-    title: 'Placas de sinalização certificadas',
-    desc: 'Placas fotoluminescentes, fitas e sinalização de rotas de fuga conforme exigências do Corpo de Bombeiros.',
+    title: 'Recarga e manutenção',
+    desc: 'Recarga rápida, manutenção de 1º, 2º e 3º níveis conforme normas ABNT e teste hidrostático. Retiramos e devolvemos no seu endereço.',
+    icon: <LuWrench size={26} />,
+  },
+  {
+    title: 'Sinalização fotoluminescente',
+    desc: 'Placas certificadas, fitas de demarcação e rotas de fuga de acordo com as exigências do Corpo de Bombeiros.',
     icon: <LuTriangleAlert size={26} />,
   },
   {
-    title: 'Treinamento TPCI',
-    desc: 'Treinamento de Prevenção e Combate a Incêndio para equipes — teoria e prática com uso correto dos equipamentos.',
+    title: 'Treinamento contra incêndio',
+    desc: 'Capacitação de equipes em prevenção e combate a incêndio — teoria e prática com uso correto dos equipamentos (TPCI).',
     icon: <LuUsers size={26} />,
   },
   {
-    title: 'Encaminhamento de alvará bombeiros',
-    desc: 'Auxílio completo na documentação e processos para obtenção do alvará do Corpo de Bombeiros.',
+    title: 'Alvará do Corpo de Bombeiros',
+    desc: 'Orientação e encaminhamento completo da documentação para obtenção e renovação do alvará de prevenção.',
     icon: <LuFileCheck size={26} />,
   },
   {
     title: 'Iluminação de emergência',
-    desc: 'Fornecimento e instalação de luminárias de emergência para garantir visibilidade em situações de falta de energia.',
+    desc: 'Fornecimento e instalação de luminárias de emergência para manter a visibilidade em caso de falta de energia.',
     icon: <LuLamp size={26} />,
   },
 ]
