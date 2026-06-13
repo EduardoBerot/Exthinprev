@@ -6,7 +6,8 @@ Landing page para a **Exthinprev** — empresa de venda, recarga e manutenção 
 
 - **React 19** + **Vite 7** (bundler)
 - **Framer Motion** — animações e transições
-- **React Three Fiber / Drei / Three.js** — cenas 3D (usadas no Hero)
+- **React Three Fiber / Drei / Three.js** — cenas 3D (disponível, usado no Hero)
+- **react-icons** — ícones via `react-icons/lu` (Lucide) e `react-icons/io5` (IoLogoWhatsapp)
 - Sem CSS framework; estilos via `src/index.css` com classes utilitárias próprias
 - Fonte: **Archivo** (Google Fonts, carregada no `index.html`)
 
@@ -16,16 +17,22 @@ Landing page para a **Exthinprev** — empresa de venda, recarga e manutenção 
 src/
   App.jsx          — root, controla estado `revealed` (intro do Hero)
   constants.js     — telefones, WhatsApp URL, endereço, links do Maps
-  index.css        — estilos globais
+  index.css        — estilos globais + breakpoints responsivos (760px, 1024px)
   components/
-    Hero.jsx       — seção inicial com vídeo/3D intro; dispara onReveal()
+    Hero.jsx       — seção inicial com vídeo intro; dispara onReveal()
     Navbar.jsx     — aparece só após revealed=true
-    Services.jsx   — seção de serviços
-    About.jsx      — sobre a empresa
-    MapSection.jsx — embed do Google Maps
+    Services.jsx   — 6 cards de serviços (array SERVICES)
+    About.jsx      — sobre a empresa + diferenciais (array DIFFS) + checklist
+    MapSection.jsx — info de contato + embed do Google Maps
     Footer.jsx
     WhatsAppButton.jsx — botão flutuante (só após revealed)
     Reveal.jsx     — wrapper de animação de entrada (scroll reveal)
+
+public/
+  logo.png              — logo principal
+  favicon.png           — favicon (E em chamas, fundo transparente)
+  hero-extinguisher.mp4 — vídeo da intro do Hero
+  hero-poster.jpg       — poster do vídeo (fallback)
 ```
 
 ## Comportamento chave
@@ -33,6 +40,22 @@ src/
 - O scroll fica travado (`overflow: hidden`) até a intro do Hero terminar e `revealed` virar `true`.
 - Navbar e WhatsAppButton só aparecem após `revealed`.
 - Todos os dados de contato e localização ficam em `src/constants.js` — edite apenas lá.
+- Vídeo do Hero: `object-position: 70% center` no desktop, `40% center` no mobile (compensa o `scaleX(-1)` do espelhamento).
+
+## Serviços atuais (Services.jsx)
+
+1. Extintores certificados
+2. Recarga e manutenção
+3. Sinalização fotoluminescente
+4. Treinamento contra incêndio (TPCI)
+5. Alvará do Corpo de Bombeiros
+6. Iluminação de emergência
+
+## Ícones
+
+Todos migrados de SVG inline para `react-icons`:
+- Lucide (`lu`): serviços, UI, contato
+- IoLogoWhatsapp (`io5`): botão flutuante, navbar CTA, footer
 
 ## Comandos
 
