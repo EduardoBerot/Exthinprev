@@ -1,38 +1,33 @@
 import { motion } from 'framer-motion'
-import { LuFlame, LuRefreshCw, LuWrench, LuDroplets, LuTriangleAlert, LuSearchCheck, LuArrowRight } from 'react-icons/lu'
+import { LuFlame, LuTriangleAlert, LuUsers, LuFileCheck, LuLamp, LuArrowRight } from 'react-icons/lu'
 import Reveal from './Reveal.jsx'
 import { WHATSAPP_URL } from '../constants.js'
 
 const SERVICES = [
   {
-    title: 'Venda de extintores',
-    desc: 'Extintores ABC, BC, CO₂ e água pressurizada, novos e certificados pelo INMETRO, para empresas, condomínios e veículos.',
+    title: 'Extintores novos e manutenções',
+    desc: 'Venda de extintores ABC, BC, CO₂ e água pressurizada certificados pelo INMETRO, com recarga, manutenção e teste hidrostático.',
     icon: <LuFlame size={26} />,
   },
   {
-    title: 'Recarga de extintores',
-    desc: 'Recarga rápida com agentes de qualidade e lacre de garantia. Retiramos e devolvemos no seu endereço.',
-    icon: <LuRefreshCw size={26} />,
-  },
-  {
-    title: 'Manutenção preventiva',
-    desc: 'Manutenção de 1º, 2º e 3º níveis conforme as normas ABNT, garantindo o funcionamento na hora da emergência.',
-    icon: <LuWrench size={26} />,
-  },
-  {
-    title: 'Teste hidrostático',
-    desc: 'Ensaio que verifica a resistência do cilindro sob pressão, obrigatório a cada 5 anos para manter a validade.',
-    icon: <LuDroplets size={26} />,
-  },
-  {
-    title: 'Sinalização de segurança',
+    title: 'Placas de sinalização certificadas',
     desc: 'Placas fotoluminescentes, fitas e sinalização de rotas de fuga conforme exigências do Corpo de Bombeiros.',
     icon: <LuTriangleAlert size={26} />,
   },
   {
-    title: 'Inspeção e consultoria',
-    desc: 'Avaliação técnica do seu PPCI: quantidade, tipo e posicionamento corretos dos equipamentos de combate a incêndio.',
-    icon: <LuSearchCheck size={26} />,
+    title: 'Treinamento TPCI',
+    desc: 'Treinamento de Prevenção e Combate a Incêndio para equipes — teoria e prática com uso correto dos equipamentos.',
+    icon: <LuUsers size={26} />,
+  },
+  {
+    title: 'Encaminhamento de alvará bombeiros',
+    desc: 'Auxílio completo na documentação e processos para obtenção do alvará do Corpo de Bombeiros.',
+    icon: <LuFileCheck size={26} />,
+  },
+  {
+    title: 'Iluminação de emergência',
+    desc: 'Fornecimento e instalação de luminárias de emergência para garantir visibilidade em situações de falta de energia.',
+    icon: <LuLamp size={26} />,
   },
 ]
 
