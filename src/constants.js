@@ -4,7 +4,7 @@ export const WHATSAPP_DISPLAY = '(51) 99826-1680'
 export const WHATSAPP_URL =
   'https://wa.me/5551998261680?text=' +
   encodeURIComponent('Olá! Vim pelo site da Exthinprev e gostaria de um orçamento.')
-export const ADDRESS = 'Rua Albino Suhre, 42 — Centro, Teutônia/RS'
+export const ADDRESS = 'Rua Albino Suhre, 42 — Teutônia/RS'
 
 export const MAPS_EMBED_URL =
   'https://www.google.com/maps?q=' +
