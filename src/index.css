@@ -780,6 +780,10 @@ section {
   padding-bottom: 48px;
 }
 
+.map-head {
+  padding-bottom: 48px;
+}
+
 .map-wrap {
   overflow: hidden;
   display: flex;
@@ -989,9 +993,7 @@ section {
 
   .hero-video {
     object-fit: cover;
-    object-position: center center;
-    width: 100%;
-    height: 100%;
+    object-position: 30% center;
   }
 
   .hero-scrim {
