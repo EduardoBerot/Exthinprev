@@ -4,9 +4,8 @@ Landing page para a **Exthinprev** — empresa de venda, recarga e manutenção 
 
 ## Stack
 
-- **React 19** + **Vite 7** (bundler)
+- **React 19** + **Vite 8** (bundler)
 - **Framer Motion** — animações e transições
-- **React Three Fiber / Drei / Three.js** — cenas 3D (disponível, usado no Hero)
 - **react-icons** — ícones via `react-icons/lu` (Lucide) e `react-icons/io5` (IoLogoWhatsapp)
 - Sem CSS framework; estilos via `src/index.css` com classes utilitárias próprias
 - Fonte: **Archivo** (Google Fonts, carregada no `index.html`)
