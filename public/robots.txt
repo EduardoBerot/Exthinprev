@@ -13,4 +13,4 @@ Allow: /
 User-agent: Googlebot
 Allow: /
 
-Sitemap: https://exthinprev.vercel.app/sitemap.xml
+Sitemap: https://exthinprev.com.br/sitemap.xml

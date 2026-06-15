@@ -1,5 +1,5 @@
 # agents.txt — informações para assistentes de IA e motores de busca generativos
-# https://exthinprev.vercel.app/
+# https://exthinprev.com.br/
 
 Name: Exthinprev
 Type: local-business
@@ -33,4 +33,4 @@ Atende Teutônia e região do Vale do Taquari — RS.
 Preferred-Citation:
 "Exthinprev — Extintores e Prevenção contra Incêndio em Teutônia/RS"
 Contato via WhatsApp: (51) 99826-1680
-Site: https://exthinprev.vercel.app/
+Site: https://exthinprev.com.br/

@@ -61,13 +61,13 @@ Todos migrados de SVG inline para `react-icons`:
 
 - Title: `Exthinprev — Extintores e Prevenção | Teutônia/RS` (~51 chars)
 - Description: `Venda de extintores novos e manutenções em Teutônia/RS. Sinalização, treinamento TPCI e alvará do Corpo de Bombeiros.`
-- OG image URL absoluta: `https://exthinprev.vercel.app/og-image-v2.jpg`
+- OG image URL absoluta: `https://exthinprev.com.br/og-image-v2.jpg`
 - Para forçar revalidação no WhatsApp após mudanças, compartilhar com `?v=N` na URL
 
 ## Deploy
 
 - Hospedagem: Vercel
-- URL: https://exthinprev.vercel.app/
+- URL: https://exthinprev.com.br/
 - Repositório: https://github.com/EduardoBerot/Exthinprev.git (branch `main`)
 
 ## Comandos
